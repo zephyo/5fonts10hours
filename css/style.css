@@ -27,24 +27,233 @@ html, body {
 }
 
 body {
-  background: black;
-  color: white;
+  background: linear-gradient(185deg, #e7b1aa 20%, #de9085);
+  background-attachment: fixed;
+  color: #480a23;
   display: flex;
   flex-direction: column;
 }
 
-.preview {
-  display: flex;
-  justify-content: space-around;
+body, a {
+  font-family: qtpi;
 }
 
-.font {
+.preview {
+  flex: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2vw;
+}
+.preview > * {
+  margin: 0 2vw 2vw 2vw;
+  border-radius: 1rem;
+  flex: 1 1 500px;
+  text-align: center;
+  overflow: hidden;
   position: relative;
+  min-height: 250px;
+}
+
+.light {
+  background: linear-gradient(-110deg, #ffdde1 20%, #fdd6bd 70%);
+  box-shadow: 0 0.8rem 3.5rem -0.5rem rgba(213, 50, 85, 0.7);
+}
+.light .rect {
+  background: white;
+  background-image: url("../miscGraphics/graph.jpg");
+  border-radius: 0.5rem;
+  position: absolute;
+  width: 390px;
+  height: 160px;
+  padding: 40px;
+  top: 40px;
+  left: 5vw;
+  font-size: 3rem;
+  color: #480a23;
+  text-shadow: 0 0.1rem 0.5rem rgba(210, 105, 140, 0.4);
+  -webkit-transform: rotate(-10deg) skew(10deg);
+          transform: rotate(-10deg) skew(10deg);
+  box-shadow: -0.5rem 0rem 2rem rgba(202, 112, 101, 0.3);
+}
+.light .rect img {
+  width: 400px;
+  position: absolute;
+  right: -50%;
+  bottom: -95%;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  -webkit-filter: drop-shadow(-5px 10px 5px rgba(202, 112, 101, 0.6));
+          filter: drop-shadow(-5px 10px 5px rgba(202, 112, 101, 0.6));
+}
+.light .rect .good-day {
+  font-size: 4rem;
+}
+.light .rect .qtpi {
+  font-size: 2.5rem;
+}
+.light .rect .efflux {
+  font-size: 5rem;
+  color: #FF6B95;
+}
+.light .rect .sub {
+  position: absolute;
+  font-size: 1.5rem;
+}
+.light:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../miscGraphics/flowers.gif");
+  background-size: cover;
+  background-position: center;
+  opacity: 1;
+  mix-blend-mode: overlay;
+}
+
+.dark {
+  box-shadow: 0 0.8rem 4rem -1rem #480a23;
+  background: #1c1c1c;
+  color: white;
+  font-size: 3rem;
+}
+.dark .rect {
+  width: 370px;
+  border: 2px solid #ff4d6b;
+  top: 33%;
+  position: relative;
+  margin: auto;
+}
+.dark .rect .maze {
+  font-size: 4rem;
+  color: #ff4d6b;
+}
+.dark .rect .sub {
+  position: absolute;
+  font-size: 1.1rem;
+  right: 0;
+  bottom: -2.7rem;
+}
+.dark img {
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+  height: 100%;
+  opacity: 0.7;
+  -webkit-filter: brightness(2) drop-shadow(0px 5px 5px black);
+          filter: brightness(2) drop-shadow(0px 5px 5px black);
+}
+.dark:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../miscGraphics/fire.gif");
+  background-size: 200%;
+  background-position: center;
+  opacity: 0.35;
+  mix-blend-mode: color-burn;
+}
+
+@media only screen and (max-width: 400px) {
+  .font summary {
+    font-size: 2rem;
+  }
+
+  body {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 400px) {
+  .font summary {
+    font-size: 3.5rem;
+  }
+
+  body {
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    font-size: 3.5rem;
+  }
+}
+.font {
+  flex: auto;
+  position: relative;
+  margin: 5px 4vw 5px 4vw;
+  padding: 0.8rem 2rem 0.8rem 2rem;
+  border-radius: 1rem;
+}
+.font details summary {
+  margin-left: 2rem;
+  position: relative;
+}
+.font details summary::-webkit-details-marker {
+  display: none;
+}
+.font details summary:before {
+  content: '\f054';
+  font-family: FontAwesome;
+  font-size: 1.2rem;
+  color: #ff4d6b;
+  position: absolute;
+  left: -2rem;
+  top: 30%;
+}
+.font details > :not(summary) {
+  margin: 0.5rem;
+  font-size: 4rem;
 }
 .font a {
   position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+}
+.font.efflux {
+  color: #900000;
+  background: url("../miscGraphics/pink.jpg");
+}
+.font.efflux p {
+  font-size: 6rem;
+}
+.font.maze {
+  background: white;
+}
+.font.maze p {
+  font-size: 6rem;
+}
+.font.maze:after {
+  content: '';
+  position: absolute;
+  top: 0;
   bottom: 0;
+  left: 0;
   right: 0;
+  background: linear-gradient(50deg, blue 10%, red 40%);
+  mix-blend-mode: screen;
+  border-radius: inherit;
+  pointer-events: none;
+}
+.font.good-day {
+  color: #3a5574;
+  background: url("../miscGraphics/cloud.png");
+}
+.font.sicko {
+  color: white;
+  background: url("../miscGraphics/sky.png");
+  background-repeat: repeat;
+}
+.font.qtpi {
+  color: #905f5d;
+  background: url("../miscGraphics/dot.png");
 }
 
 .efflux {
@@ -67,6 +276,43 @@ body {
   font-family: qtpi;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  text-shadow: 3px 0px #d53255, -1px -1px 0.1rem #d53255, 1px 1px 0.1rem #d53255;
+  transition: all 0.3s ease;
+}
+a:hover {
+  color: #ff4d6b;
+}
+
+h1 {
+  margin-bottom: 0;
+  position: relative;
+}
+h1 a {
+  position: absolute;
+  font-size: 2.5rem;
+  left: -4.5rem;
+  top: 1.5rem;
+}
+h1 .number {
+  color: #d53255;
+}
+
+.subtext {
+  margin-top: 0;
+  margin-bottom: 0.7rem;
+}
+
 h1, .subtext {
+  text-align: left;
+  margin-left: 25vw;
+  margin-right: 10vw;
+}
+
+.cr {
   text-align: center;
+  margin: 2vw;
+  margin-top: 4vw;
 }

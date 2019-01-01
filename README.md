@@ -9,4 +9,4 @@ For my 16th day of winter break, I made 5 unique fonts using ink pens, Photoshop
 ## qtpi 
 
 # License
-All fonts are under [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/us/). CC 2018 Angela He.
+All fonts are under [Creative Commons Attribution 3.0](https://creativecommons.org/licenses/by/3.0/us/). Copyright 2018 Angela He.

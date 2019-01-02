@@ -8,12 +8,12 @@ For my 16th day of winter break, I made 5 unique fonts using ink pens, Photoshop
     
 ## Efflux
 
-  <p align="center"><img src = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/94b09c74307459.5c2ba38a561a3.png" ><img src = "https://zephyo.github.io/5fonts10hours/miscGraphics/efflux.png" >
+  <p align="center"><img src = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/94b09c74307459.5c2ba38a561a3.png" ><img src = "https://mir-s3-cdn-cf.behance.net/project_modules/fs/b2755474307459.5c2ba38a55ab8.png" >
     </p>
     
 ## Maze
 
-  <p align="center"><img src = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/164ae274308095.5c2baa759af9b.png" ><img src = "https://zephyo.github.io/5fonts10hours/miscGraphics/maze.png" >
+  <p align="center"><img src = "https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/164ae274308095.5c2baa759af9b.png" ><img src = "https://mir-s3-cdn-cf.behance.net/project_modules/fs/ea1bb874308095.5c2baa759b2ff.png" >
     </p>
 
 ## Good Day
